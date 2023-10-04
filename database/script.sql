@@ -3,7 +3,8 @@ DROP DATABASE IF EXISTS employees;
 DROP USER IF EXISTS employees_user;
 
 -- Just for example. You shouldn't save password to git.
-CREATE USER employees_user PASSWORD 'a2{O)9U%V+Lt~dnMykSPG1?sF8Wf:p0H';
+CREATE USER employees_user WITH
+    UNENCRYPTED PASSWORD 'a2{O)9U%V+Lt~dnMykSPG1?sF8Wf:p0H';
 CREATE DATABASE employees WITH
     OWNER employees_user
     ENCODING 'UTF8';
