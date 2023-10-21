@@ -1,4 +1,4 @@
--- sudo --user=postgres psql --file=script.sql
+-- sudo --user=postgres psql --file=database/script.sql
 DROP DATABASE IF EXISTS employees;
 DROP USER IF EXISTS employees;
 
@@ -9,7 +9,7 @@ CREATE USER employees WITH
     NOCREATEROLE
     ENCRYPTED PASSWORD 'a2{O)9U%V+Lt~dnMykSPG1?sF8Wf:p0H';
 CREATE DATABASE employees WITH
-    OWNER = employees_user
+    OWNER = employees
     ENCODING = 'UTF8';
 
 -- psql --dbname=employees --username=employees --password
