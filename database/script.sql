@@ -2,7 +2,7 @@
 DROP DATABASE IF EXISTS employees;
 DROP USER IF EXISTS employees;
 
--- Just for example. You shouldn't save password to git.
+-- Just for example. You should not save password to git.
 CREATE USER employees WITH
     NOSUPERUSER
     NOCREATEDB
